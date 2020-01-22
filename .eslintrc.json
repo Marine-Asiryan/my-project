@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.8.6"
+    }
+  },
+  "rules": {
+    "jsx-a11y/label-has-associated-control" : "off",
+    "jsx-a11y/label-has-for" : "off",
+    "no-async-promise-executor": ["error"],
+    "no-await-in-loop": ["error"],
+    "no-extra-parens": ["error", "all", {
+      "ignoreJSX": "all"
+    }],
+    "no-misleading-character-class": ["error"],
+    "no-template-curly-in-string": ["error"],
+    "no-underscore-dangle": ["error", {
+      "allow": ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"]
+    }],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "require-atomic-updates": ["error"],
+    "accessor-pairs": ["error"],
+    "class-methods-use-this": ["error"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "comma-dangle": ["error", "never"],
+    "valid-jsdoc": ["error"],
+    "react/prefer-stateless-function": ["error"],
+    "react/jsx-filename-extension": ["error", {
+      "extensions": [".js", ".jsx"]
+    }],
+    "import/prefer-default-export": "off",
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "sibling", "parent", "internal", "index"],
+      "newlines-between": "always"
+    }]
+  }
+}
